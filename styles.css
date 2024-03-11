@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "TT Lakes", sans-serif;
+    font-weight: 500;
+}
+
+.side-menu {
+    margin: 0;
+    margin-right: auto;
+    width: 320px;
+    min-height: 780px;
+    height: 100vh;   
+    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.side-menu__header {
+    display: flex;
+    padding-top: 23px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-bottom: 46px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.side-menu__burger-button {
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.button:hover {
+    transition: filter 0.2s ease;
+    filter: brightness(1.2) drop-shadow(0 0 5px rgba(255, 62, 121, 1));
+}
+
+.side-menu__menu-button,
+.side-menu__search-button {
+    height: 40px;
+}
+
+.side-menu__logo {
+    margin-left: 17px;
+    margin-right: auto;
+}
+
+.side-menu__link-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.side-menu__link > a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #1B1C21;
+}
+
+.side-menu__link--chosen--true > a {
+    color: #7E7E82;
+}
+
+.side-menu__link-list > li {
+    margin-bottom: 32px;
+    margin-left: 24px;
+}
+
+.side-menu__link-list > li:hover {
+    text-decoration: underline;
+}
+
+.side-menu__link-list::before {
+    content: "";
+    width: 8px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #41F6D7;
+    position: absolute;
+    top: -10px;
+    left: -4px;
+}
+
+.side-menu__footer {
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+.side-menu__contacts {
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+}
+
+.side-menu__buttons {
+    display: flex;
+    width: 152px;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.side-menu__phone {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.side-menu__languages {
+    display: flex;
+    margin-top: 40px;
+    margin-left: 24px;
+    margin-bottom: 32px;
+    width: 87px;
+    justify-content: space-between;
+}
+
+.side-menu__lang-button > a {
+    text-decoration: none;
+    color: #1B1C21;
+}
+
+.side-menu__ru-button--chosen--true > a {
+    color: #7E7E82;
+}
+
+.side-menu__lang-button:hover {
+    text-decoration: underline;
+}
